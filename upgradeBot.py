@@ -9,7 +9,7 @@ myUserName = 'UpgradeSuggestionBot'
 
 bot = praw.Reddit(user_agent='UpgradeBot v1.3', client_id='zbsXTNm0j0zJ7Q', client_secret='xyKAWUAolx0g_rw3ouYi2-fcNjI', username=myUserName, password='mmiicckk')
 
-subreddits = bot.subreddit('iphone+ipad+apple+ios+applehelp+appletv+applemusic+funny+explainlikeimfive+geek+getnarwhal+lifeprotips+showerthoughts+wtf+gaming+aww+conspiracy+technology+sports+askredit+nba+nfl+soccer+IAmA+trees+memes+MLS+cars+bestof')
+subreddits = bot.subreddit('iphone+ipad+apple+ios+applehelp+appletv+applemusic+funny+explainlikeimfive+geek+getnarwhal+lifeprotips+showerthoughts+wtf+gaming+conspiracy+technology+sports+nba+nfl+soccer+IAmA+trees+memes+MLS+cars+bestof+subredditsimulator+android+iosthemes+iosprogramming+redditmobile+iosbeta+iosgaming+jailbreak')
 
 comments = subreddits.stream.comments()
 
