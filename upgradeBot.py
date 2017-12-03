@@ -4,13 +4,15 @@ import praw
 import time
 
 
+# Copied this character from a text message from someone with the bug.
+# How it appears in text editors is variable.
 theBadStr = "I️"
 myUserName = 'UpgradeSuggestionBot'
 
 
 bot = praw.Reddit(user_agent='UpgradeBot v1.3', client_id='zbsXTNm0j0zJ7Q', client_secret='xyKAWUAolx0g_rw3ouYi2-fcNjI', username=myUserName, password='mmiicckk')
 
-subreddits = bot.subreddit('iphone+ipad+apple+ios+applehelp+appletv+applemusic+explainlikeimfive+geek+getnarwhal+lifeprotips+showerthoughts+wtf+gaming+technology+sports+nba+nfl+soccer+IAmA+trees+memes+MLS+bestof+subredditsimulator+android+iosthemes+iosprogramming+redditmobile+iosbeta+iosgaming+jailbreak')
+subreddits = bot.subreddit('iphone+ipad+apple+ios+applehelp+appletv+applemusic+explainlikeimfive+geek+getnarwhal+lifeprotips+showerthoughts+wtf+gaming+technology+sports+nba+soccer+IAmA+trees+memes+bestof+subredditsimulator+android+iosthemes+iosprogramming+redditmobile+iosbeta+iosgaming+jailbreak')
 
 comments = subreddits.stream.comments()
 
